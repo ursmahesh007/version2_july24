@@ -10,8 +10,8 @@ def main():
     ('40.117.183.99'),
     ssh_username="testuser",
     ssh_password="testuser@123",
-    local_bind_address=('127.0.0.1', 27017),
-    remote_bind_address=('127.0.0.1', 27017)) as server:
+    local_bind_address=('0.0.0.0', 28017),
+    remote_bind_address=('0.0.0.0', 28017)) as server:
         print(server.local_bind_port)
         # press Ctrl-C for stopping
         os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
