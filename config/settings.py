@@ -98,8 +98,8 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'users',
         'ENFORCE_SCHEMA': False,
-        'HOST':"127.0.0.1",
-        # 'PORT':
+        'HOST':"40.117.183.99",
+        'PORT': 27017,
         'USER': 'markoeats',
         'PASSWORD': 'Mark0eats@123',
     }
