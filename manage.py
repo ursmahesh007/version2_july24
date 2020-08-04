@@ -6,13 +6,13 @@ from sshtunnel import SSHTunnelForwarder
 from time import sleep
 
 def main():
-    with SSHTunnelForwarder(
-    ('40.117.183.99'),
-    ssh_username="testuser",
-    ssh_password="testuser@123",
-    local_bind_address=('0.0.0.0', 28017),
-    remote_bind_address=('0.0.0.0', 28017)) as server:
-        print(server.local_bind_port)
+#     with SSHTunnelForwarder(
+#     ('40.117.183.99'),
+#     ssh_username="testuser",
+#     ssh_password="testuser@123",
+#     local_bind_address=('0.0.0.0', 28017),
+#     remote_bind_address=('0.0.0.0', 28017)) as server:
+#         print(server.local_bind_port)
         # press Ctrl-C for stopping
         os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
         try:
@@ -25,7 +25,7 @@ def main():
             ) from exc
         execute_from_command_line(sys.argv)
         # sleep(1)
-    print('Connection Terminated')
+#     print('Connection Terminated')
 
 if __name__ == '__main__':
     main()
