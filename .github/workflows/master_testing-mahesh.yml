@@ -31,4 +31,4 @@ jobs:
       with:
         app-name: 'testing-mahesh'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_9ac6c14a21864a9cbf144df70086c1e0 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_a115c84b5f9c425b9c84e7bd0fdc8ef7 }}
